@@ -1,0 +1,214 @@
+@font-face {
+  font-family: 'tsukushi-a';
+  src: url('./fonts/Tsukushi\ A\ Round\ Gothic\ Regular.ttf');
+}
+
+:root {
+  --primary: #9ac7d0;
+  --secondary: #ddbea9;
+  --background: #faf9f9;
+  --text: #415a77;
+}
+
+.bg-primary {
+  background-color: var(--primary) !important;
+}
+
+.text-primary {
+  color: var(--primary) !important;
+}
+
+.bg-secondary {
+  background-color: var(--secondary);
+}
+
+.text-secondary {
+  color: var(--secondary);
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+
+.btn-primary:hover {
+  background-color: shade(var(--primary), 10%);
+  border-color: shade(var(--primary), 10%);
+  color: var(--primary);
+}
+
+.btn-secondary {
+  background-color: var(--secondary);
+  border-color: var(--secondary);
+}
+
+.btn-secondary:hover {
+  background-color: shade(var(--secondary), 10%);
+  border-color: shade(var(--secondary), 10%);
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--primary);
+  padding-left: 20px;
+  justify-content: space-between !important;
+}
+
+.navbar .nav-link {
+  color: var(--background);
+}
+
+.navbar .nav-link:hover {
+  color: var(--text);
+}
+
+.nav-link,
+.footer {
+  color: #eaeaea;
+}
+
+/* Carousel */
+.carousel-item {
+  max-height: 700px;
+  height: 65vh;
+  min-height: 300px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* Footer */
+footer {
+  background-color: var(--primary);
+  color: white;
+  padding: 20px 0;
+}
+
+/* General */
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+/* General Header Text */
+h1,
+h2,
+h3,
+h4,
+h5,
+.navbar-brand,
+.nav-link {
+  color: var(--secondary);
+}
+h6 {
+  color: var(--text);
+  font-weight: 600;
+}
+h1,
+h2 {
+  font-family: 'tsukushi-a', sans-serif;
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none !important;
+}
+/* Carousel Caption */
+.carousel-caption h1,
+.carousel-caption p {
+  color: var(--background);
+  font-family: inherit;
+}
+
+/* Custom button */
+.btn-custom {
+  background-color: var(--secondary);
+  color: white;
+}
+
+.btn-custom:hover {
+  background-color: darken(var(--secondary), 10%);
+  color: white;
+}
+
+/* Carousel */
+
+.carousel-caption h5,
+.carousel-caption p {
+  text-shadow: 2px 2px 4px #000000;
+}
+
+/* Card */
+
+.card {
+  background-color: var(--background);
+  border: 2px solid var(--primary);
+  color: var(--text);
+}
+
+.card .card-title {
+  color: var(--text);
+}
+
+.solid-color-card {
+  background-color: var(--primary);
+  color: var(--background);
+}
+
+.solid-color-card-title {
+  color: var(--text);
+}
+
+/* Other */
+
+.about-hero {
+  background-image: url('./assets/about.png');
+  min-height: 400px;
+  height: 40vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+strong {
+  color: var(--secondary);
+}
+
+ol {
+  list-style-type: none;
+  counter-reset: list-counter;
+}
+
+ol li {
+  counter-increment: list-counter;
+  position: relative;
+}
+ol li::before {
+  content: counter(list-counter) '.';
+  position: absolute;
+  left: -25px;
+  color: var(--secondary);
+  font-weight: 600;
+}
+
+.map-container {
+  margin-top: 30px;
+  height: 300px;
+  width: 100%;
+  background-image: url('./assets/map.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.contact-hero {
+  background-image: url('./assets/logo-lg.png');
+  min-height: 400px;
+  height: 40vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
